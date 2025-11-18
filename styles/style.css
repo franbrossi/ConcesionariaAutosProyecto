@@ -111,7 +111,7 @@ nav  {
 
 
 
-.logo {
+.logo-navbar-brand  {
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -147,6 +147,8 @@ footer {
     background-color: rgb(186, 91, 170);
     color: black;
     font-size: 15px;
+    gap: 8px;
+    margin-top: 0px;
 }
 
 .modelo-auto {
