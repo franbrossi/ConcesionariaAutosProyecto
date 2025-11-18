@@ -25,6 +25,7 @@ h1 {
     text-align: center;
     margin: 16px; 
     padding: 16px;
+    margin-top: 20px;
     
     
 
@@ -101,27 +102,16 @@ body {
 
 nav  {
 
-    display: grid;
-    grid-template-rows: 50px;
-    grid-template-columns: repeat(5,1fr);
-    gap: 16px;
-    grid-template-areas:"left logo" ;
-    margin-top: 80px;
+    display: flex;
+    gap: 16px ;
+    margin-top: 60px;
 
 }
 
-.left {
-grid-area: left;
-display: flex;
-flex-direction: row;
-justify-content: flex-start;
-align-items: center;
-gap: 16px;
-}
+
 
 
 .logo {
-    grid-area: logo;
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -176,23 +166,29 @@ footer {
 
 
 
+
+
 @media (max-width: 450px) {
     body {
         margin: 0 16px;
     }
-    nav {
-        grid-template-areas: 
-        "logo logo logo logo"
-        "left";
-        grid-template-rows: 50px 20px;
-        grid-template-columns: repeat(4, 1fr) ;
-    }
+   
     .main-content {
         flex-direction: column;
     }
 
     footer {
         flex-direction: column;
+        align-items: center;
         }
-
+    
+    .left {
+        display: flex; 
+        flex-direction: row; 
+        justify-content: flex-start;
+        align-items: center;
+        gap: 10px;
 }
+}
+
+
