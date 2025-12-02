@@ -1,0 +1,33 @@
+/* fuente nunito */
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap');
+
+/* font-family: "Nunito", sans-serif; */
+
+/* fuente inconsolata */
+
+@import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@200..900&display=swap');
+
+/* font-family: "Inconsolata", monospace; */
+
+
+.footer-p { 
+    font-size: 12px;
+    font-style: italic;
+    font-family:"Nunito", sans-serif;
+}
+
+p {
+    color: black;
+    font-family:"Inconsolata", monospace ;
+    font-size: 20px;
+}
+
+h1 {
+    color: grey;
+    font-size: 56px;
+    font-family:"Nunito", sans-serif;
+    text-align: center;
+    margin: 16px;
+    padding: 16px;
+    margin-top: 20px;
+}  
