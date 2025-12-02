@@ -1,0 +1,32 @@
+@use "../utilities/variables";
+
+
+.main-content {
+    margin-top: 80px;
+    display: flex;
+    flex-direction: row;
+    gap: 80px;
+    align-items: center;
+
+}
+p {
+    color: black;
+    font-family:"Inconsolata", monospace ;
+    font-size: 20px;
+}
+
+h1 {
+    color: grey;
+    font-size: 56px;
+    font-family:"Nunito", sans-serif;
+    text-align: center;
+    margin: 16px;
+    padding: 16px;
+    margin-top: 20px;
+}  
+
+.modelo-auto {
+
+    width: 300px;
+
+}
