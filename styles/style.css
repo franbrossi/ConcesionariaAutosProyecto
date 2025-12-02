@@ -1,3 +1,197 @@
+*{
+    margin: 0;
+    padding: 0;
+}
 
 
 /*# sourceMappingURL=style.css.map */
+
+/* fuente nunito */
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap');
+
+/* font-family: "Nunito", sans-serif; */
+
+/* fuente inconsolata */
+
+@import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@200..900&display=swap');
+
+/* font-family: "Inconsolata", monospace; */   		LISTO LAS FONTS
+
+h1 {
+    /* propiedad: valor */
+    color: grey;
+    font-size: 56px;
+    font-family: "Nunito", sans-serif;
+    text-align: center;
+    margin: 16px; 
+    padding: 16px;
+    margin-top: 20px;
+    
+   
+
+    /* si solo coloco 2 datos el de la izquierda eje vertical y el de la derecha eje horizontal */
+    
+
+    /* asi para todas las direcciones */
+    /* margin: 16px; */
+}
+
+
+
+
+p  {
+    color: black;
+    font-family: "Inconsolata", monospace;
+    font-size: 20px;
+
+
+}
+
+.footer-p {
+
+    font-size: 12px;
+    font-style: italic;
+    font-family: "Nunito", sans-serif;
+        
+}
+
+  /* para id se simboliza con # (NO SE PUEDEN REPETIR ID'S COMO LOS CLASS) NO ESTILAR CON ID, para class . */
+
+
+header {
+
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    gap: 16px;
+    align-items: center;
+    margin-top: 50px;
+}
+
+
+
+
+li {
+
+    list-style-type: none;
+
+
+}
+
+a {
+    text-decoration: none;
+    color: black;
+
+}
+
+
+body {
+
+    margin: 0 32px;
+    background-color: brown;
+}
+
+
+
+
+
+
+
+
+
+
+
+nav  {
+
+    display: flex;
+    gap: 16px ;
+    margin-top: 60px;
+
+}
+
+
+
+
+.logo-navbar-brand  {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 150px;
+    justify-content: center;
+    gap: 8px;
+   
+
+
+
+
+}
+
+
+footer {
+    margin-top: 80px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+
+}
+
+
+
+.active {
+    display: flex;
+    color: black;
+    text-decoration: none;
+    margin: 0; 
+    padding: 8px;
+    border: 2px solid black;
+    border-radius: 8px;
+    background-color: rgb(186, 91, 170);
+    color: black;
+    font-size: 15px;
+    gap: 8px;
+    margin-top: 0px;
+}
+
+.modelo-auto {
+
+    width: 300px;
+
+}
+
+.main-content {
+    margin-top: 80px;
+    display: flex;
+    flex-direction: row;
+    gap: 80px;
+    align-items: center;
+
+}
+
+
+
+
+
+@media (max-width: 450px) {
+    body {
+        margin: 0 16px;
+    }
+   
+    .main-content {
+        flex-direction: column;
+        margin-top: 30px;
+    }
+
+    footer {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .left {
+        display: flex; 
+        flex-direction: column; 
+        justify-content: flex-start;
+        align-items: flex-start;
+        gap: 16px;
+    }
+}
