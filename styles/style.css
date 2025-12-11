@@ -75,7 +75,6 @@ p  {
 
 
 /* 3. ALINEACIÓN DEL MENÚ A LA DERECHA (SIN AUTO/FLEX-GROW) */
-/* Usa la propiedad flex de .navbar-collapse para empujar el contenido al final */
 .navbar-collapse {
     justify-content: flex-end; 
 }
@@ -143,10 +142,10 @@ footer {
 }
 
 
-/* AJUSTE: NUEVA CLASE PARA EL CARRUSEL */
+/* AJUSTE: CLASE PARA EL CARRUSEL */
 .carousel {
     /* Define el ancho que ocupará el carrusel en el layout de PC */
-    width: 400px;
+    width: 600px;
 }
 
 
@@ -173,6 +172,68 @@ footer {
 }
 
 
+/* --- ESTILOS PARA LA SEGUNDA SECCIÓN (EXCLUSIVIDADES) --- */
+
+.contenido-exclusivo {
+    /* Mantenemos el mismo padding lateral que el main-content y footer (32px) */
+    padding-left: 32px; 
+    padding-right: 32px;
+    margin-top: 100px; /* Separación grande de la sección de bienvenida */
+    margin-bottom: 80px; /* Separación antes del footer */
+    text-align: center;
+}
+
+.contenido-exclusivo h2 {
+    font-family: "Nunito", sans-serif;
+    color: #333;
+    font-size: 40px;
+    margin-bottom: 40px;
+}
+
+.features-container {
+    display: flex;
+    flex-direction: row; /* Tres columnas en escritorio */
+    justify-content: space-around;
+    gap: 30px;
+    margin-bottom: 40px;
+}
+
+.extra-item {
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 20px;
+    text-align: center;
+}
+
+section div h3 {
+    font-family: "Nunito", sans-serif;
+    font-size: 24px;
+    color: #000;
+    margin-bottom: 15px;
+}
+
+section div p {
+    font-size: 24px;
+    
+}
+
+.texto-aditional {
+    /* Estilo para el párrafo final */
+    max-width: 800px;
+    margin: 0 auto; /* Centrar el texto adicional */
+    font-style: italic;
+    color: #555;
+}
+
+.image-bottom {
+
+    width: 80%;
+    height: 180px;
+    margin-top: 20px;
+    border-radius: 4px;
+}
+
+
 /* MEDIA QUERIES - Ajustes para móvil (Wireframe Home (movil).jpg) */
 
 @media (max-width: 450px) {
@@ -193,12 +254,7 @@ footer {
     }
 
     /* En móvil, el texto debe ocupar todo el ancho disponible */
-    .left-content {
-        max-width: 100%;
-        width: 100%;
-        text-align: center;
-    }
-
+    .left-content,
     .carousel {
         max-width: 100%;
         width: 100%;
@@ -207,6 +263,22 @@ footer {
     
     .main-content .texto {
         text-align: center; /* El wireframe móvil sugiere un bloque de texto central */
+    }
+    
+    /* Ajuste para la sección de exclusividades en móvil */
+    .contenido-exclusivo {
+        margin-top: 50px;
+        padding-left: 16px; 
+        padding-right: 16px;
+    }
+
+    .features-container {
+        flex-direction: column; /* Apila las 3 columnas en una sola columna */
+        gap: 20px;
+    }
+
+    .extra-item {
+        flex-basis: auto; /* Permite que tome el ancho completo en columna */
     }
 
 
@@ -219,11 +291,14 @@ footer {
         padding-right: 16px;
         justify-content: center;
         text-align: center;
+        background-color: black;
     }
     
     /* Asegurar que los enlaces del footer también se apilan en móvil */
     .redes {
         margin: 5px 0;
+        text-decoration: none;
+        
     }
 
     /* El texto de copyright debe volver al flujo normal en móvil */
