@@ -61,7 +61,7 @@ p  {
 }
 
 /* 1. Elimina el padding lateral que Bootstrap aplica a .container-fluid dentro de .navbar */
-.nav_div {
+.navbar .container-fluid.nav_div {
     padding-left: 0;
     padding-right: 0;
 }
@@ -117,7 +117,6 @@ body {
 
 .logo {
     width: 150px;
-    background-color: black;
     
 
 }
@@ -140,15 +139,16 @@ footer {
 
 /* Para que el texto de copyright se alinee a la derecha junto a los enlaces */
 .footer-p {
-    /* Aquí se requiere margin-left: auto para empujar el texto a la derecha,
-       ya que está en el mismo nivel que el logo y los enlaces. */
     margin-left: auto;
 }
 
 
-.modelo-auto {
-    width: 300px;
+/* AJUSTE: NUEVA CLASE PARA EL CARRUSEL */
+.carousel {
+    /* Define el ancho que ocupará el carrusel en el layout de PC */
+    width: 400px;
 }
+
 
 .main-content {
     margin-top: 80px; 
@@ -157,7 +157,7 @@ footer {
     padding-left: 32px; 
     padding-right: 32px;
     
-    /* Disposición de dos columnas: Texto a la izquierda y Imagen a la derecha */
+    /* Disposición de dos columnas: Texto a la izquierda y Carrusel a la derecha */
     display: flex;
     flex-direction: row; 
     gap: 80px;
@@ -165,8 +165,8 @@ footer {
     justify-content: space-between; 
 }
 
-/* Darle más espacio al texto de bienvenida (wireframe PC) usando max-width */
-.texto {
+/* Darle más espacio al contenedor de texto de bienvenida (wireframe PC) */
+.left-content {
     max-width: 60%;
     width: 100%; 
     text-align: left; 
@@ -193,10 +193,22 @@ footer {
     }
 
     /* En móvil, el texto debe ocupar todo el ancho disponible */
-    .texto {
+    .left-content {
         max-width: 100%;
+        width: 100%;
+        text-align: center;
+    }
+
+    .carousel {
+        max-width: 100%;
+        width: 100%;
+        text-align: center;
+    }
+    
+    .main-content .texto {
         text-align: center; /* El wireframe móvil sugiere un bloque de texto central */
     }
+
 
     footer {
         /* Se adapta al wireframe móvil: elementos apilados (columna) */
