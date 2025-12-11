@@ -1,6 +1,7 @@
 *{
     margin: 0;
     padding: 0;
+    box-sizing: border-box; 
 }
 
 
@@ -26,15 +27,9 @@ h1 {
     margin: 16px; 
     padding: 16px;
     margin-top: 20px;
-    
-   
-
-    /* si solo coloco 2 datos el de la izquierda eje vertical y el de la derecha eje horizontal */
-    
-
-    /* asi para todas las direcciones */
-    /* margin: 16px; */
 }
+
+
 
 
 
@@ -43,8 +38,6 @@ p  {
     color: black;
     font-family: "Inconsolata", monospace;
     font-size: 20px;
-
-
 }
 
 .footer-p {
@@ -58,37 +51,63 @@ p  {
   /* para id se simboliza con # (NO SE PUEDEN REPETIR ID'S COMO LOS CLASS) NO ESTILAR CON ID, para class . */
 
 
-header {
 
-    display: flex;
-    flex-direction: row;
-    justify-content: flex-start;
-    gap: 16px;
+
+/* AJUSTES DE NAVBAR */
+.bg_nav_propio {
     align-items: center;
-    margin-top: 50px;
+    margin-top: 0; /* Pega la nav al borde superior */
+    background-color: black;
+}
+
+/* 1. Elimina el padding lateral que Bootstrap aplica a .container-fluid dentro de .navbar */
+.nav_div {
+    padding-left: 0;
+    padding-right: 0;
+}
+
+/* 2. Distribuye el logo y el botón/menú a los lados */
+.nav_div {
+    display: flex; 
+    justify-content: space-between; 
+    align-items: center;
 }
 
 
-
-
-li {
-
-    list-style-type: none;
-
-
+/* 3. ALINEACIÓN DEL MENÚ A LA DERECHA (SIN AUTO/FLEX-GROW) */
+/* Usa la propiedad flex de .navbar-collapse para empujar el contenido al final */
+.navbar-collapse {
+    justify-content: flex-end; 
 }
 
+/* Estilo para la lista de enlaces */
+.nav_ul {
+    display: flex;
+    justify-content: flex-end; 
+}
+
+/* Estilo base de los items de la nav */
+.nav-item {
+    gap: 16px;
+}
+
+
+/* ESTILO GENERAL DE 'A' (PARA LOGO Y FOOTER) */
 a {
     text-decoration: none;
-    color: black;
+}
 
+/* ESTILO PARA LOS ENLACES DE NAVEGACIÓN (nav-link de Bootstrap) */
+.nav-link {
+    color: white; /* Aplica el color blanco */
 }
 
 
 body {
 
-    margin: 0 32px;
-    background-color: brown;
+    /* CORRECCIÓN: Se elimina el margen lateral para que el header llegue a los bordes */
+    margin: 0;
+    
 }
 
 
@@ -96,102 +115,108 @@ body {
 
 
 
-
-
-
-
-
-nav  {
-
-    display: flex;
-    gap: 16px ;
-    margin-top: 60px;
-
-}
-
-
-
-
-.logo-navbar-brand  {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
+.logo {
     width: 150px;
-    justify-content: center;
-    gap: 8px;
-   
-
-
-
+    background-color: black;
+    
 
 }
 
 
 footer {
     margin-top: 80px;
+    
+    /* CORRECCIÓN: Añadir padding para que el contenido no se pegue a los bordes */
+    padding-left: 32px; 
+    padding-right: 32px;
+    
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
+    /* Distribución basada en el wireframe de PC (logo izq, resto der) */
+    justify-content: space-between; 
     align-items: center;
 
 }
 
-
-
-.active {
-    display: flex;
-    color: black;
-    text-decoration: none;
-    margin: 0; 
-    padding: 8px;
-    border: 2px solid black;
-    border-radius: 8px;
-    background-color: rgb(186, 91, 170);
-    color: black;
-    font-size: 15px;
-    gap: 8px;
-    margin-top: 0px;
+/* Para que el texto de copyright se alinee a la derecha junto a los enlaces */
+.footer-p {
+    /* Aquí se requiere margin-left: auto para empujar el texto a la derecha,
+       ya que está en el mismo nivel que el logo y los enlaces. */
+    margin-left: auto;
 }
 
+
 .modelo-auto {
-
     width: 300px;
-
 }
 
 .main-content {
-    margin-top: 80px;
+    margin-top: 80px; 
+    
+    /* CORRECCIÓN: Añadir padding para que el contenido no se pegue a los bordes */
+    padding-left: 32px; 
+    padding-right: 32px;
+    
+    /* Disposición de dos columnas: Texto a la izquierda y Imagen a la derecha */
     display: flex;
-    flex-direction: row;
+    flex-direction: row; 
     gap: 80px;
     align-items: center;
+    justify-content: space-between; 
+}
 
+/* Darle más espacio al texto de bienvenida (wireframe PC) usando max-width */
+.texto {
+    max-width: 60%;
+    width: 100%; 
+    text-align: left; 
 }
 
 
-
-
+/* MEDIA QUERIES - Ajustes para móvil (Wireframe Home (movil).jpg) */
 
 @media (max-width: 450px) {
+    /* Mantenemos el body sin margen */
     body {
-        margin: 0 16px;
+        margin: 0; 
     }
    
     .main-content {
-        flex-direction: column;
+        /* Se adapta al wireframe móvil: elementos apilados (columna) */
+        flex-direction: column; 
         margin-top: 30px;
+        /* Aseguramos el padding lateral para que el texto no toque los bordes */
+        padding-left: 16px; 
+        padding-right: 16px;
+        justify-content: center;
+        align-items: center; /* Centrar elementos apilados */
+    }
+
+    /* En móvil, el texto debe ocupar todo el ancho disponible */
+    .texto {
+        max-width: 100%;
+        text-align: center; /* El wireframe móvil sugiere un bloque de texto central */
     }
 
     footer {
+        /* Se adapta al wireframe móvil: elementos apilados (columna) */
         flex-direction: column;
         align-items: center;
+        /* Aseguramos el padding lateral */
+        padding-left: 16px; 
+        padding-right: 16px;
+        justify-content: center;
+        text-align: center;
     }
     
-    .left {
-        display: flex; 
-        flex-direction: column; 
-        justify-content: flex-start;
-        align-items: flex-start;
-        gap: 16px;
+    /* Asegurar que los enlaces del footer también se apilan en móvil */
+    .redes {
+        margin: 5px 0;
+    }
+
+    /* El texto de copyright debe volver al flujo normal en móvil */
+    .footer-p {
+        margin-left: 0;
+        margin-top: 15px; /* Separación después de los enlaces/logo */
     }
 }
