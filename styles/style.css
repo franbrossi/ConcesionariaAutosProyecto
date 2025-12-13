@@ -30,10 +30,6 @@ h1 {
 }
 
 
-
-
-
-
 p  {
     color: black;
     font-family: "Inconsolata", monospace;
@@ -41,32 +37,36 @@ p  {
 }
 
 .footer-p {
-
     font-size: 12px;
     font-style: italic;
     font-family: "Nunito", sans-serif;
-        
+    margin-left: auto;
 }
 
-  /* para id se simboliza con # (NO SE PUEDEN REPETIR ID'S COMO LOS CLASS) NO ESTILAR CON ID, para class . */
 
-
-
-
-/* AJUSTES DE NAVBAR */
 .bg_nav_propio {
     align-items: center;
-    margin-top: 0; /* Pega la nav al borde superior */
+    margin-top: 0; 
     background-color: black;
 }
 
-/* 1. Elimina el padding lateral que Bootstrap aplica a .container-fluid dentro de .navbar */
-.navbar .container-fluid.nav_div {
+
+ .nav_div {
     padding-left: 0;
     padding-right: 0;
 }
 
-/* 2. Distribuye el logo y el botón/menú a los lados */
+.navbar {
+    padding-left: 0;
+    padding-right: 0;
+}
+
+.container-fluid {
+    padding-left: 0;
+    padding-right: 0;
+}
+
+
 .nav_div {
     display: flex; 
     justify-content: space-between; 
@@ -74,89 +74,73 @@ p  {
 }
 
 
-/* 3. ALINEACIÓN DEL MENÚ A LA DERECHA (SIN AUTO/FLEX-GROW) */
+
 .navbar-collapse {
     justify-content: flex-end; 
 }
 
-/* Estilo para la lista de enlaces */
+
 .nav_ul {
     display: flex;
     justify-content: flex-end; 
 }
 
-/* Estilo base de los items de la nav */
+
 .nav-item {
     gap: 16px;
 }
 
 
-/* ESTILO GENERAL DE 'A' (PARA LOGO Y FOOTER) */
+
 a {
     text-decoration: none;
 }
 
-/* ESTILO PARA LOS ENLACES DE NAVEGACIÓN (nav-link de Bootstrap) */
+
 .nav-link {
     color: white; /* Aplica el color blanco */
 }
 
 
 body {
-
-    /* CORRECCIÓN: Se elimina el margen lateral para que el header llegue a los bordes */
-    margin: 0;
     
+    margin: 0;
 }
-
-
-
-
 
 
 .logo {
     width: 150px;
-    
-
 }
 
 
 footer {
     margin-top: 80px;
-    
-    /* CORRECCIÓN: Añadir padding para que el contenido no se pegue a los bordes */
     padding-left: 32px; 
     padding-right: 32px;
-    
     display: flex;
     flex-direction: row;
-    /* Distribución basada en el wireframe de PC (logo izq, resto der) */
     justify-content: space-between; 
     align-items: center;
-
-}
-
-/* Para que el texto de copyright se alinee a la derecha junto a los enlaces */
-.footer-p {
-    margin-left: auto;
 }
 
 
-/* AJUSTE: CLASE PARA EL CARRUSEL */
+
+/* ESTILOS HOME (INDEX) */
+
+
+
 .carousel {
-    /* Define el ancho que ocupará el carrusel en el layout de PC */
+    
     width: 600px;
 }
 
 
 .main-content {
     margin-top: 80px; 
-    
-    /* CORRECCIÓN: Añadir padding para que el contenido no se pegue a los bordes */
     padding-left: 32px; 
     padding-right: 32px;
     
-    /* Disposición de dos columnas: Texto a la izquierda y Carrusel a la derecha */
+    
     display: flex;
     flex-direction: row; 
     gap: 80px;
@@ -164,7 +148,7 @@ footer {
     justify-content: space-between; 
 }
 
-/* Darle más espacio al contenedor de texto de bienvenida (wireframe PC) */
+
 .left-content {
     max-width: 60%;
     width: 100%; 
@@ -172,14 +156,12 @@ footer {
 }
 
 
-/* --- ESTILOS PARA LA SEGUNDA SECCIÓN (EXCLUSIVIDADES) --- */
 
 .contenido-exclusivo {
-    /* Mantenemos el mismo padding lateral que el main-content y footer (32px) */
     padding-left: 32px; 
     padding-right: 32px;
-    margin-top: 100px; /* Separación grande de la sección de bienvenida */
-    margin-bottom: 80px; /* Separación antes del footer */
+    margin-top: 100px; 
+    margin-bottom: 80px; 
     text-align: center;
 }
 
@@ -192,7 +174,7 @@ footer {
 
 .features-container {
     display: flex;
-    flex-direction: row; /* Tres columnas en escritorio */
+    flex-direction: row; 
     justify-content: space-around;
     gap: 30px;
     margin-bottom: 40px;
@@ -205,6 +187,7 @@ footer {
     text-align: center;
 }
 
+
 section div h3 {
     font-family: "Nunito", sans-serif;
     font-size: 24px;
@@ -212,48 +195,152 @@ section div h3 {
     margin-bottom: 15px;
 }
 
-section div p {
-    font-size: 24px;
-    
-}
-
-.texto-aditional {
-    /* Estilo para el párrafo final */
-    max-width: 800px;
-    margin: 0 auto; /* Centrar el texto adicional */
-    font-style: italic;
-    color: #555;
-}
 
 .image-bottom {
-
     width: 80%;
     height: 180px;
     margin-top: 20px;
     border-radius: 4px;
+    
 }
 
 
-/* MEDIA QUERIES - Ajustes para móvil (Wireframe Home (movil).jpg) */
+.texto-aditional {
+    max-width: 800px;
+    margin: 0; 
+    color: #555;
+}
+
+
+/* ========================================= */
+/* ESTILOS PÁGINA FINANCIACIÓN */
+/* ========================================= */
+
+.tipos-financiacion {
+    display: flex;
+    flex-direction: column; 
+    gap: 40px;
+    padding: 0 32px; 
+    margin-top: 80px;
+    margin-bottom: 80px;
+    align-items: center; 
+}
+
+
+.planes {
+    width: 100%; 
+    padding: 30px;
+    border: 1px solid #000; 
+    border-radius: 10px;
+    background-color: #f9f9f9; 
+}
+
+.planes h2 {
+    font-family: "Nunito", sans-serif;
+    font-size: 32px;
+    margin-bottom: 20px;
+    text-align: left;
+}
+
+.content-planes li {
+    font-family: "Inconsolata", monospace;
+    font-size: 18px;
+    margin-bottom: 15px;
+    color: black;
+}
+
+.content-planes p {
+    font-family: "Inconsolata", monospace;
+    font-size: 18px;
+    margin-bottom: 15px;
+    color: black;
+} 
+
+.texto-destacado {
+    font-family: "Inconsolata", monospace;
+    font-size: 18px;
+    margin-bottom: 10px;
+    color: black;
+}
+
+
+
+.lista-vehiculos {
+    width: 100%; 
+    display: flex;
+    flex-direction: column; 
+    gap: 30px;
+}
+
+.vehiculo-card {
+    display: flex;
+    flex-direction: row; 
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 15px;
+    background-color: white;
+}
+
+.info-vehiculo {
+    width: 55%; 
+    padding-right: 20px;
+}
+
+.info-vehiculo h3 {
+    font-family: "Nunito", sans-serif;
+    font-size: 28px;
+    margin-bottom: 10px;
+}
+
+.info-vehiculo p {
+    font-family: "Inconsolata", monospace;
+    font-size: 18px;
+    color: #333;
+}
+
+.vehiculo-card img {
+    width: 30%;
+    height: 220px; 
+    border-radius: 8px;
+}
+
+.card-button {
+    display: inline-block;
+    margin-top: 15px;
+    padding: 10px 20px;
+    background-color: black; 
+    color: white; 
+    font-family: "Nunito", sans-serif;
+    font-weight: 700;
+    font-size: 14px;
+    border-radius: 5px; 
+    text-decoration: none;
+    border: 2px solid black; 
+
+}
+
+/* ========================================= */
+/* MEDIA QUERIES GENERALES (MÓVIL) */
+/* ========================================= */
 
 @media (max-width: 450px) {
-    /* Mantenemos el body sin margen */
+    
     body {
         margin: 0; 
     }
    
+    /* Ajustes HOME */
     .main-content {
-        /* Se adapta al wireframe móvil: elementos apilados (columna) */
         flex-direction: column; 
         margin-top: 30px;
-        /* Aseguramos el padding lateral para que el texto no toque los bordes */
         padding-left: 16px; 
         padding-right: 16px;
         justify-content: center;
-        align-items: center; /* Centrar elementos apilados */
+        align-items: center; 
     }
 
-    /* En móvil, el texto debe ocupar todo el ancho disponible */
     .left-content,
     .carousel {
         max-width: 100%;
@@ -262,10 +349,9 @@ section div p {
     }
     
     .main-content .texto {
-        text-align: center; /* El wireframe móvil sugiere un bloque de texto central */
+        text-align: center; 
     }
     
-    /* Ajuste para la sección de exclusividades en móvil */
     .contenido-exclusivo {
         margin-top: 50px;
         padding-left: 16px; 
@@ -273,20 +359,16 @@ section div p {
     }
 
     .features-container {
-        flex-direction: column; /* Apila las 3 columnas en una sola columna */
+        flex-direction: column; 
         gap: 20px;
     }
 
-    .extra-item {
-        flex-basis: auto; /* Permite que tome el ancho completo en columna */
-    }
+    
 
-
+    
     footer {
-        /* Se adapta al wireframe móvil: elementos apilados (columna) */
         flex-direction: column;
         align-items: center;
-        /* Aseguramos el padding lateral */
         padding-left: 16px; 
         padding-right: 16px;
         justify-content: center;
@@ -294,16 +376,47 @@ section div p {
         background-color: black;
     }
     
-    /* Asegurar que los enlaces del footer también se apilan en móvil */
     .redes {
         margin: 5px 0;
         text-decoration: none;
-        
     }
 
-    /* El texto de copyright debe volver al flujo normal en móvil */
     .footer-p {
         margin-left: 0;
-        margin-top: 15px; /* Separación después de los enlaces/logo */
+        margin-top: 15px; 
+    }
+
+    
+    .tipos-financiacion {
+        flex-direction: column; 
+        gap: 30px;
+        padding: 0 16px; 
+    }
+
+    .planes {
+        width: 100%; 
+        padding: 0;
+        background-color: transparent;
+        border: none;
+    }
+
+    .lista-vehiculos {
+        width: 100%;
+    }
+
+    .vehiculo-card {
+        flex-direction: column-reverse; 
+        text-align: center;
+        gap: 15px;
+    }
+
+    .info-vehiculo {
+        width: 100%;
+        padding-right: 0;
+    }
+
+    .vehiculo-card img {
+        width: 100%;
+        height: auto;
     }
 }

@@ -1,27 +1,21 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
+<head> 
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
-    <!-- BOOTSTRAP -->
 
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
-   
-        <!-- css -->
-    <link rel="stylesheet" href="../styles/style.css">
 
-    <title>tipos de financiacion</title>
+    <link rel="stylesheet" href="../styles/style.css">
+    <title>Financiación - Car's Fran</title>
 </head>
 <body>
     <header>
-        <nav class="navbar navbar-expand-lg bg-body-tertiary"> 
-            <div class="container-fluid"> 
+        <nav class="navbar navbar-expand-lg bg_nav_propio"> 
+            <div class="container-fluid nav_div">
                 
-                <a class="navbar-brand" href="#">
-
-                    <img class="logo-navbar-brand" src="../assets/logo_car's_franç.png" alt="logo car's fran">
-
+                <a href="../index.html">
+                    <img class="logo" src="../assets/logo_car's_franç.png" alt="logo car's fran">
                 </a>
 
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -29,21 +23,21 @@
                 </button>
                 
                 <div class="collapse navbar-collapse" id="navbarNav">
-                    <ul class="left navbar-nav">
-                        <li>
-                            <a class="active" href="../index.html">Home</a>
+                    <ul class="navbar-nav nav_ul">
+                        <li class="nav-item">
+                            <a class="nav-link" href="../index.html">Home</a>
                         </li>
-                        <li>
-                            <a class="active" href="./modelos.html">modelos</a>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./modelos.html">Modelos</a>
                         </li>
-                        <li>
-                            <a class="active" href="#">financiacion</a>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Financiación</a>
                         </li>
-                        <li>
-                            <a class="active" href="./post_venta.html">post_venta</a>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./post_venta.html">Post Venta</a>
                         </li>
-                        <li>
-                            <a class="active" href="./sobre_nosotros.html">sobre_nosotros</a>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./sobre_nosotros.html">Sobre Nosotros</a>
                         </li>
                     </ul>
                 </div>
@@ -52,32 +46,73 @@
     </header>
 
     <main>
+        <section class="tipos-financiacion">
+            
+            <div class="planes">
+                <h2>Planes de Financiación</h2>
+                <div class="content-planes">
+                    <p>En Car's Fran entendemos que cada cliente es único. Por eso, ofrecemos planes de financiación a medida que se adaptan a tu economía.</p>
+                    <p>Trabajamos con los principales bancos del país para ofrecerte las tasas más competitivas del mercado. Ya sea que busques un leasing para tu empresa o un crédito prendario para tu primer 0km, tenemos la solución.</p>
+                    
+                    <p class="texto-destacado">Beneficios exclusivos:</p>
+                    
+                    <ul>
+                        <li>Tasa 0% en modelos seleccionados.</li>
+                        <li>Hasta 60 cuotas fijas.</li>
+                        <li>Aprobación en 24hs.</li>
+                    </ul>
+                    <p>Acércate a nuestras sucursales para recibir asesoramiento personalizado de nuestros expertos financieros.</p>
+                </div>
+            </div>
 
-        <section class="main-content">
+            <div class="lista-vehiculos">
+                
+                <div class="vehiculo-card">
+                    <div class="info-vehiculo">
+                        <h3>SUV's</h3>
+                        <p>Ideales para la familia y la aventura. Financia hasta el 70% del valor con entrega inmediata. Cuotas bonificadas los primeros 3 meses.</p>
+                        <a class="card-button" href="">MAS INFORMACION</a>
+                    </div>
+                    <img src="https://images.unsplash.com/photo-1519641471654-76ce0107ad1b?auto=format&fit=crop&w=500&q=80" alt="Financiación SUV">
+                    
+                </div>
 
-            <h1>planes de financiacion</h1>
+                <div class="vehiculo-card">
+                    <div class="info-vehiculo">
+                        <h3>Sedán</h3>
+                        <p>Elegancia y confort para la ciudad. Planes 100% financiados sin interés. Consulta por el plan de canje de tu usado como parte de pago.</p>
+                        <a class="card-button" href="">MAS INFORMACION</a>
+                    </div>
+                    <img src="https://images.unsplash.com/photo-1552519507-da3b142c6e3d?auto=format&fit=crop&w=500&q=80" alt="Financiación Sedán">
+                    
+                </div>
 
-            <p>Te ofrecemos las mejores opciones de financiación del mercado para que puedas acceder a tu Car's Fran de la manera más cómoda y sencilla.</p>
+                <div class="vehiculo-card">
+                    <div class="info-vehiculo">
+                        <h3>Eléctricos</h3>
+                        <p>El futuro es hoy. Tasa preferencial eco-friendly del 5% anual. Incluye instalación de cargador domiciliario bonificada.</p>
+                        <a class="card-button" href="">MAS INFORMACION</a>
+                    </div>
+                    <img src="https://images.unsplash.com/photo-1593941707882-a5bba14938c7?auto=format&fit=crop&w=500&q=80" alt="Financiación Eléctricos">
+                    
+                </div>
+
+            </div>
 
         </section>
-
-        
-
     </main>
+
     <footer>
-        <!-- aca va el texto de copyright con los iconos a redes y algun metodo de contacto -->
-         <img class="logo-navbar-brand" src="../assets/logo_car's_franç.png" alt="logo car's fran">
-         <a href="">INSTAGRAM</a>
-         <a href="">TIK TOK</a>
-         <a href="">CONTACTO</a>
+        <img class="logo" src="../assets/logo_car's_franç.png" alt="logo car's fran">
+         <a class="redes" href="">INSTAGRAM</a>
+
+         <a class="redes" href="">TIKTOK</a>
+
+         <a class="redes" href="">CONTACTO</a>
         <p class="footer-p">© 2025 Car's Fran. Prohibida su reproducción total o parcial sin autorización expresa. Todas las marcas comerciales, logotipos e imágenes son propiedad de Car's Fran o de sus respectivos dueños.</p>
         
     </footer>
-    
-    <!-- BOOTSTRAP JS -->
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
-    
 </body>
-    
 </html>
