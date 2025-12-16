@@ -1,79 +1,123 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
+<head> 
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <!-- BOOTSTRAP -->
-
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
 
-    <!-- CSS -->
     <link rel="stylesheet" href="../styles/style.css">
-
-    <title>post venta</title>
+    <title>Post Venta - Car's Fran</title>
 </head>
 <body>
     <header>
-        <nav class="navbar navbar-expand-lg bg-body-tertiary"> 
-            <div class="container-fluid"> 
+        <nav class="navbar navbar-expand-lg bg_nav_propio"> 
+            <div class="container-fluid nav_div">
                 
-                <a class="navbar-brand" href="#">
-
-                    <img class="logo-navbar-brand" src="../assets/logo_car's_franç.png" alt="logo car's fran">
-
+                <a href="../index.html">
+                    <img class="logo" src="../assets/logo_car's_franç.png" alt="logo car's fran">
                 </a>
+
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
                 
                 <div class="collapse navbar-collapse" id="navbarNav">
-                    <ul class="left navbar-nav">
-                        <li>
-                            <a class="active" href="../index.html">Home</a>
+                    <ul class="navbar-nav nav_ul">
+                        <li class="nav-item">
+                            <a class="nav-link" href="../index.html">Home</a>
                         </li>
-                        <li>
-                            <a class="active" href="./modelos.html">modelos</a>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./modelos.html">Modelos</a>
                         </li>
-                        <li>
-                            <a class="active" href="./financiacion.html">financiacion</a>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./financiacion.html">Financiación</a>
                         </li>
-                        <li>
-                            <a class="active" href="#">post_venta</a>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Post Venta</a>
                         </li>
-                        <li>
-                            <a class="active" href="./sobre_nosotros.html">sobre_nosotros</a>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./sobre_nosotros.html">Sobre Nosotros</a>
                         </li>
                     </ul>
                 </div>
             </div>
         </nav>
     </header>
+
     <main>
+        
+        <section class="postventa-container">
+            
+            <div class="pv-titulo">
+                <h1>Servicio de Atención al Vehículo</h1>
+                <p>Tu tranquilidad es nuestra prioridad. Conocé nuestros servicios exclusivos diseñados para mantener tu auto como nuevo.</p>
+            </div>
 
-        <section class="main-content">
-            <h1> servicio post venta</h1>
+            <div class="pv-servicios">
+                <div class="pv-card">
+                    <h3>Service Oficial</h3>
+                    <p>Mantenimiento preventivo oficial para asegurar la vida útil de tu motor. Utilizamos tecnología de diagnóstico computarizado.</p>
+                </div>
 
-        <p>Nuestro compromiso contigo continúa después de tu compra. Accede a nuestro servicio técnico oficial, repuestos originales y la mejor atención.</p>
+                <div class="pv-card">
+                    <h3>Garantía Extendida</h3>
+                    <p>Cobertura extendida de fábrica hasta 5 años o 150.000 km. Viajá seguro con el respaldo total de Car's Fran en todo el país.</p>
+                </div>
+
+                <div class="pv-card">
+                    <h3>Consulta Online</h3>
+                    <p>Gestioná tus turnos, historial de mantenimiento y consultas técnicas sin salir de tu casa a través de nuestra plataforma.</p>
+                </div>
+            </div>
+
+            <div class="pv-contacto">
+                <h2>Contacto Directo</h2>
+                <div class="dato-contacto">
+                    <h4>Mail</h4>
+                    <p>postventa@carsfran.com</p>
+                </div>
+                <div class="dato-contacto">
+                    <h4>Teléfono</h4>
+                    <p>0800-555-FRAN</p>
+                </div>
+                <div class="dato-contacto">
+                    <h4>Whatsapp</h4>
+                    <p>+54 9 11 1234 5678</p>
+                </div>
+                <div class="dato-contacto">
+                    <h4>Horarios</h4>
+                    <p>Lun a Vie: 08:00 - 18:00</p>
+                </div>
+            </div>
 
         </section>
-        
+
+        <section class="info-taller">
+            <h2>Nuestros Talleres Certificados</h2>
+            <p>Contamos con una red de talleres equipados con la última tecnología en mecánica automotriz. Cada uno de nuestros técnicos pasa por un riguroso proceso de capacitación anual para estar al día con las innovaciones de nuestros modelos eléctricos y a combustión.</p>
+            
+            <img src="https://images.unsplash.com/photo-1487754180451-c456f719a1fc?auto=format&fit=crop&w=1000&q=80" alt="Mecánico trabajando en taller">
+            
+            <p class="texto-final">Utilizamos repuestos originales en todas nuestras reparaciones para garantizar el rendimiento óptimo y la seguridad de tu vehículo. No arriesgues tu inversión, confía en los expertos de Car's Fran.</p>
+        </section>
 
     </main>
+
     <footer>
-        <!-- aca va el texto de copyright con los iconos a redes y algun metodo de contacto -->
-         <img class="logo-navbar-brand" src="../assets/logo_car's_franç.png" alt="logo car's fran">
-         <a href="">INSTAGRAM</a>
-         <a href="">TIK TOK</a>
-         <a href="">CONTACTO</a>
+        <img class="logo" src="../assets/logo_car's_franç.png" alt="logo car's fran">
+            <section class="redes">
+                <a href="">INSTAGRAM</a>
+
+                <a href="">TIKTOK</a>
+
+                <a href="">CONTACTO</a>
+
+            </section>
         <p class="footer-p">© 2025 Car's Fran. Prohibida su reproducción total o parcial sin autorización expresa. Todas las marcas comerciales, logotipos e imágenes son propiedad de Car's Fran o de sus respectivos dueños.</p>
         
     </footer>
-    
-    <!-- BOOTSTRAP JS -->
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
-    
 </body>
-
 </html>

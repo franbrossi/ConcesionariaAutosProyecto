@@ -1,50 +1,43 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
+<head> 
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-
-    <!-- BOOTSTRAP -->
-
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
 
-    <!-- css -->
-
     <link rel="stylesheet" href="../styles/style.css">
-
-    <title>Modelos - Car's fran</title>
+    <title>Modelos - Car's Fran</title>
 </head>
 <body>
     <header>
-        <nav class="navbar navbar-expand-lg bg-body-tertiary"> 
-            <div class="container-fluid"> 
+        <nav class="navbar navbar-expand-lg bg_nav_propio"> 
+            <div class="container-fluid nav_div">
                 
-                <a class="navbar-brand" href="#">
-
-                    <img class="logo-navbar-brand" src="../assets/logo_car's_franç.png" alt="logo car's fran">
-
+                <a href="../index.html">
+                    <img class="logo" src="../assets/logo_car's_franç.png" alt="logo car's fran">
                 </a>
+
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
                 
                 <div class="collapse navbar-collapse" id="navbarNav">
-                    <ul class="left navbar-nav">
-                        <li>
-                            <a class="active" href="../index.html">Home</a>
+                    <ul class="navbar-nav nav_ul">
+                        <li class="nav-item">
+                            <a class="nav-link" href="../index.html">Home</a>
                         </li>
-                        <li>
-                            <a class="active" href="#">modelos</a>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Modelos</a>
                         </li>
-                        <li>
-                            <a class="active" href="./financiacion.html">financiacion</a>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./financiacion.html">Financiación</a>
                         </li>
-                        <li>
-                            <a class="active" href="./post_venta.html">post_venta</a>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./post_venta.html">Post Venta</a>
                         </li>
-                        <li>
-                            <a class="active" href="./sobre_nosotros.html">sobre_nosotros</a>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./sobre_nosotros.html">Sobre Nosotros</a>
                         </li>
                     </ul>
                 </div>
@@ -53,30 +46,83 @@
     </header>
 
     <main>
-
-        <section class="main-content">
-            <h1> nuestros modelos</h1>
-
-        <p>Descubre nuestra exclusiva gama de vehículos, diseñados para impresionar y ofrecer un rendimiento sin igual. Explora las especificaciones de cada uno.</p>
-        </section>
         
+        <section class="intro">
+            <h1>Descubre Nuestra Gama</h1>
+            <p>Ingeniería de precisión diseñada para cada estilo de vida. Explora nuestros modelos.</p>
+        </section>
+
+        <section class="container">
+            
+            <article class="modelos">
+                <figure class="modelo-img">
+                    <img src="https://images.unsplash.com/photo-1533473359331-0135ef1b58bf?auto=format&fit=crop&w=1000&q=80" alt="Gama SUV">
+                </figure>
+                <div class="texto">
+                    <h2>La Fuerza de los SUV's</h2>
+                    <h3>Dominio y Espacio</h3>
+                    <p>Diseñados para quienes exigen presencia en el camino sin sacrificar confort. Nuestra línea SUV combina motores potentes con interiores de lujo, ideales para viajes largos o la jungla de concreto.</p>
+                    <ul>
+                        <li>Tracción integral inteligente (AWD).</li>
+                        <li>Espacio para hasta 7 pasajeros.</li>
+                        <li>Sistema de seguridad Fran-Shield.</li>
+                    </ul>
+                    <a class="card-button" href="./financiacion.html">FINANCIA YA</a>
+                </div>
+            </article>
+
+            <article class="modelos">
+                <figure class="modelo-img">
+                    <img src="https://images.unsplash.com/photo-1542362567-b07e54358753?auto=format&fit=crop&w=1000&q=80" alt="Gama Sedán">
+                </figure>
+                <div class="texto">
+                    <h2>Elegancia Sedán</h2>
+                    <h3>Sofisticación Urbana</h3>
+                    <p>La definición clásica de automovilismo. Siluetas aerodinámicas y un manejo suave que convierte cada trayecto en un placer. La tecnología de insonorización te aísla del caos exterior.</p>
+                    <ul>
+                        <li>Consumo optimizado para ciudad.</li>
+                        <li>Interiores en cuero artesanal.</li>
+                        <li>Conectividad 5G integrada.</li>
+                    </ul>
+                    <a class="card-button" href="./financiacion.html">FINANCIA YA</a>
+                </div>
+            </article>
+
+            <article class="modelos">
+                <figure class="modelo-img">
+                    <img src="https://images.unsplash.com/photo-1593941707882-a5bba14938c7?auto=format&fit=crop&w=1000&q=80" alt="Gama Eléctrica">
+                </figure>
+                <div class="texto">
+                    <h2>Futuro Eléctrico</h2>
+                    <h3>Innovación Silenciosa</h3>
+                    <p>El rendimiento instantáneo se encuentra con la responsabilidad ambiental. Nuestros modelos 100% eléctricos ofrecen una aceleración que corta la respiración con cero emisiones.</p>
+                    <ul>
+                        <li>Autonomía superior a 500km.</li>
+                        <li>Carga rápida (80% en 30 min).</li>
+                        <li>Piloto automático asistido Nivel 2.</li>
+                    </ul>
+                    <a class="card-button" href="./financiacion.html">FINANCIA YA</a>
+                </div>
+            </article>
+
+        </section>
 
     </main>
+
     <footer>
-        <!-- aca va el texto de copyright con los iconos a redes y algun metodo de contacto -->
-         <img class="logo-navbar-brand" src="../assets/logo_car's_franç.png" alt="logo car's fran">
-         <a href="">INSTAGRAM</a>
-         <a href="">TIK TOK</a>
-         <a href="">CONTACTO</a>
+        <img class="logo" src="../assets/logo_car's_franç.png" alt="logo car's fran">
+            <section class="redes">
+                <a href="">INSTAGRAM</a>
+
+                <a href="">TIKTOK</a>
+
+                <a href="">CONTACTO</a>
+
+            </section>
         <p class="footer-p">© 2025 Car's Fran. Prohibida su reproducción total o parcial sin autorización expresa. Todas las marcas comerciales, logotipos e imágenes son propiedad de Car's Fran o de sus respectivos dueños.</p>
         
     </footer>
-    
-    
-</body>
-    
-<!-- BOOTSTRAP JS -->
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
-    
+</body>
 </html>

@@ -4,22 +4,12 @@
     box-sizing: border-box; 
 }
 
-
-/*# sourceMappingURL=style.css.map */
-
-/* fuente nunito */
+/* FUENTES */
 @import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap');
-
-/* font-family: "Nunito", sans-serif; */
-
-/* fuente inconsolata */
-
 @import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@200..900&display=swap');
 
-/* font-family: "Inconsolata", monospace; */   		LISTO LAS FONTS
-
+/* ESTILOS GENERALES */
 h1 {
-    /* propiedad: valor */
     color: grey;
     font-size: 56px;
     font-family: "Nunito", sans-serif;
@@ -28,7 +18,6 @@ h1 {
     padding: 16px;
     margin-top: 20px;
 }
-
 
 p  {
     color: black;
@@ -41,31 +30,21 @@ p  {
     font-style: italic;
     font-family: "Nunito", sans-serif;
     margin-left: auto;
+    margin-top: 20px;
+    color: white; 
 }
 
-
+/* NAVBAR */
 .bg_nav_propio {
     align-items: center;
     margin-top: 0; 
     background-color: black;
 }
 
-
- .nav_div {
+.navbar .container-fluid.nav_div {
     padding-left: 0;
     padding-right: 0;
 }
-
-.navbar {
-    padding-left: 0;
-    padding-right: 0;
-}
-
-.container-fluid {
-    padding-left: 0;
-    padding-right: 0;
-}
-
 
 .nav_div {
     display: flex; 
@@ -73,45 +52,31 @@ p  {
     align-items: center;
 }
 
-
-
 .navbar-collapse {
     justify-content: flex-end; 
 }
-
 
 .nav_ul {
     display: flex;
     justify-content: flex-end; 
 }
 
-
 .nav-item {
     gap: 16px;
 }
 
 
-
-a {
-    text-decoration: none;
-}
-
-
 .nav-link {
-    color: white; /* Aplica el color blanco */
+    color: white; 
 }
-
 
 body {
-    
     margin: 0;
 }
-
 
 .logo {
     width: 150px;
 }
-
 
 footer {
     margin-top: 80px;
@@ -121,26 +86,29 @@ footer {
     flex-direction: row;
     justify-content: space-between; 
     align-items: center;
+    background-color: black;
+    
 }
 
+.redes a {
+    padding-left: 30px;
+    gap: 20px;
+    text-decoration: none;
+    list-style-type: none;
+    color: white;
+}
 
-
-/* ESTILOS HOME (INDEX) */
-
+/* ESTILOS HOME */
 
 
 .carousel {
-    
     width: 600px;
 }
-
 
 .main-content {
     margin-top: 80px; 
     padding-left: 32px; 
     padding-right: 32px;
-    
-    
     display: flex;
     flex-direction: row; 
     gap: 80px;
@@ -148,13 +116,10 @@ footer {
     justify-content: space-between; 
 }
 
-
 .left-content {
-    max-width: 60%;
     width: 100%; 
     text-align: left; 
 }
-
 
 
 .contenido-exclusivo {
@@ -182,11 +147,10 @@ footer {
 
 .extra-item {
     padding: 20px;
-    border: 1px solid #ddd;
+    border: 1px solid #ddd; 
     border-radius: 20px;
     text-align: center;
 }
-
 
 section div h3 {
     font-family: "Nunito", sans-serif;
@@ -195,26 +159,21 @@ section div h3 {
     margin-bottom: 15px;
 }
 
-
 .image-bottom {
     width: 80%;
-    height: 180px;
+    height: auto; 
     margin-top: 20px;
-    border-radius: 4px;
-    
 }
 
-
 .texto-aditional {
-    max-width: 800px;
-    margin: 0; 
+    margin: 0 auto; 
+    font-style: italic;
     color: #555;
 }
 
 
-/* ========================================= */
-/* ESTILOS PÁGINA FINANCIACIÓN */
-/* ========================================= */
+/* ESTILOS FINANCIACIÓN */
+
 
 .tipos-financiacion {
     display: flex;
@@ -225,7 +184,6 @@ section div h3 {
     margin-bottom: 80px;
     align-items: center; 
 }
-
 
 .planes {
     width: 100%; 
@@ -248,22 +206,20 @@ section div h3 {
     margin-bottom: 15px;
     color: black;
 }
-
 .content-planes p {
     font-family: "Inconsolata", monospace;
     font-size: 18px;
     margin-bottom: 15px;
     color: black;
-} 
+}
 
 .texto-destacado {
     font-family: "Inconsolata", monospace;
     font-size: 18px;
+    font-weight: 700; 
     margin-bottom: 10px;
     color: black;
 }
-
-
 
 .lista-vehiculos {
     width: 100%; 
@@ -301,13 +257,13 @@ section div h3 {
 }
 
 .vehiculo-card img {
-    width: 30%;
-    height: 220px; 
+    width: 40%;
+    height: auto; 
     border-radius: 8px;
 }
 
 .card-button {
-    display: inline-block;
+    display: inline-block; 
     margin-top: 15px;
     padding: 10px 20px;
     background-color: black; 
@@ -318,12 +274,285 @@ section div h3 {
     border-radius: 5px; 
     text-decoration: none;
     border: 2px solid black; 
-
 }
 
-/* ========================================= */
-/* MEDIA QUERIES GENERALES (MÓVIL) */
-/* ========================================= */
+.card-button:hover {
+    background-color: white; 
+    color: black; 
+    border: 2px solid black; 
+}
+
+
+/* ESTILOS MODELOS */
+
+
+.intro {
+    text-align: center;
+    margin-top: 60px;
+    margin-bottom: 60px;
+    padding: 0 32px;
+}
+
+.intro h1 {
+    color: black;
+    font-family: "Nunito", sans-serif;
+    font-size: 56px;
+    margin-bottom: 15px;
+}
+
+.intro p {
+    color: #555;
+    font-family: "Inconsolata", monospace;
+    font-size: 24px;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    gap: 100px; 
+    padding: 0 32px;
+    margin-bottom: 100px;
+}
+
+.modelos {
+    display: flex;
+    flex-direction: row; 
+    align-items: center;
+    justify-content: space-between;
+    gap: 50px;
+    padding: 20px;
+    background-color: #fff; 
+}
+
+.modelo-img {
+    width: 55%; 
+}
+
+.modelo-img img {
+    width: 100%;
+    height: auto; 
+    border-radius: 15px;
+}
+
+.texto {
+    width: 40%;
+}
+
+.texto h2 {
+    font-family: "Nunito", sans-serif;
+    font-size: 48px;
+    color: black;
+    margin-bottom: 10px;
+}
+
+.texto h3 {
+    font-family: "Inconsolata", monospace;
+    font-size: 22px;
+    color: grey;
+    margin-bottom: 25px;
+}
+
+.texto p {
+    font-family: "Inconsolata", monospace;
+    font-size: 18px;
+    color: #333;
+    margin-bottom: 15px;
+}
+
+.texto li {
+    font-family: "Inconsolata", monospace;
+    font-size: 18px;
+    color: #333;
+    margin-bottom: 15px;
+}
+
+.texto ul {
+    padding-left: 20px; 
+}
+
+
+/* ESTILOS POST VENTA */
+
+
+.postventa-container {
+    display: flex;
+    flex-direction: row; 
+    justify-content: space-between;
+    gap: 30px;
+    padding: 40px 32px;
+    align-items: flex-start;
+}
+
+.pv-titulo {
+    width: 25%;
+    border: 1px solid black;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.pv-titulo h1 {
+    font-size: 40px;
+    margin-bottom: 20px;
+}
+
+.pv-servicios {
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.pv-card {
+    border: 1px solid black;
+    padding: 20px;
+    border-radius: 10px;
+    background-color: #f9f9f9;
+    text-align: center;
+}
+
+.pv-card h3 {
+    font-family: "Nunito", sans-serif;
+    margin-bottom: 10px;
+}
+
+.pv-contacto {
+    width: 25%;
+    border: 1px solid black;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.pv-contacto h2 {
+    font-family: "Nunito", sans-serif;
+    font-size: 32px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.dato-contacto {
+    margin-bottom: 20px;
+}
+
+.dato-contacto h4 {
+    font-family: "Nunito", sans-serif;
+    font-size: 18px;
+    font-weight: 700;
+}
+
+.info-taller {
+    padding: 40px 32px;
+    margin-bottom: 100px;
+    text-align: center;
+    background-color: #fff;
+}
+
+.info-taller h2 {
+    font-family: "Nunito", sans-serif;
+    font-size: 40px;
+    margin-bottom: 20px;
+    color: black;
+}
+
+.info-taller p {
+    max-width: 800px;
+    margin: 0 auto 30px auto;
+}
+
+.info-taller img {
+    width: 100%;
+    height: auto;
+    border-radius: 15px;
+    margin-bottom: 30px;
+}
+
+.texto-final {
+    font-style: italic;
+    color: #555;
+}
+
+
+/* ESTILOS SOBRE NOSOTROS */
+
+
+.nosotros-container {
+    display: flex;
+    flex-direction: row; 
+    align-items: center;
+    gap: 60px;
+    padding: 60px 32px;
+    margin-bottom: 40px;
+}
+
+.nosotros-texto {
+    width: 50%;
+}
+
+.nosotros-texto h1 {
+    color: black;
+    text-align: left; 
+    font-size: 48px;
+    margin-left: 0;
+    margin-bottom: 30px;
+}
+
+.nosotros-texto p {
+    margin-bottom: 20px;
+    line-height: 1.6;
+    color: #333;
+}
+
+.nosotros-imagen {
+    width: 50%;
+}
+
+.nosotros-imagen img {
+    width: 100%;
+    height: auto; 
+    border-radius: 10px;
+    border: 1px solid #ddd;
+}
+
+
+.valores-container {
+    padding: 40px 32px;
+    margin-bottom: 80px;
+    background-color: #f9f9f9;
+}
+
+.valores-container h2 {
+    font-family: "Nunito", sans-serif;
+    text-align: center;
+    font-size: 40px;
+    margin-bottom: 40px;
+    color: black;
+}
+
+.valores-grid {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 30px;
+}
+
+.item {
+    width: 30%; /* Tres columnas iguales */
+    background-color: #fff;
+    padding: 30px;
+    border: 1px solid #000;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.item h3 {
+    font-family: "Nunito", sans-serif;
+    font-size: 24px;
+    margin-bottom: 15px;
+}
+
+
+/* MEDIA QUERIES (Unidad 4) */
+
 
 @media (max-width: 450px) {
     
@@ -331,7 +560,7 @@ section div h3 {
         margin: 0; 
     }
    
-    /* Ajustes HOME */
+    /* HOME */
     .main-content {
         flex-direction: column; 
         margin-top: 30px;
@@ -341,14 +570,21 @@ section div h3 {
         align-items: center; 
     }
 
-    .left-content,
-    .carousel {
-        max-width: 100%;
+    .left-content { 
+        width: 100%;
+        text-align: center;
+    }
+
+    .carousel { 
         width: 100%;
         text-align: center;
     }
     
-    .main-content .texto {
+    .main-content  {
+        text-align: center; 
+    }
+
+    .texto {
         text-align: center; 
     }
     
@@ -363,9 +599,7 @@ section div h3 {
         gap: 20px;
     }
 
-    
-
-    
+    /* FOOTER */
     footer {
         flex-direction: column;
         align-items: center;
@@ -386,7 +620,7 @@ section div h3 {
         margin-top: 15px; 
     }
 
-    
+    /* FINANCIACIÓN */
     .tipos-financiacion {
         flex-direction: column; 
         gap: 30px;
@@ -394,14 +628,9 @@ section div h3 {
     }
 
     .planes {
-        width: 100%; 
         padding: 0;
         background-color: transparent;
         border: none;
-    }
-
-    .lista-vehiculos {
-        width: 100%;
     }
 
     .vehiculo-card {
@@ -412,11 +641,115 @@ section div h3 {
 
     .info-vehiculo {
         width: 100%;
-        padding-right: 0;
     }
 
     .vehiculo-card img {
         width: 100%;
+    }
+
+    .vehiculo-card img {
         height: auto;
+    }
+
+    /* MODELOS */
+    .intro h1 {
+        font-size: 40px;
+    }
+    
+    .intro p {
+        font-size: 20px;
+    }
+
+    .container {
+        gap: 60px; 
+        padding: 0 16px;
+    }
+
+    .modelos {
+        flex-direction: column;
+        gap: 30px;
+        padding: 0;
+    }
+
+    .modelo-img {
+        width: 100%; 
+        text-align: left;
+    }
+
+    .texto {
+        width: 100%; 
+        text-align: left;
+    }
+
+    .modelo-img img {
+        height: auto; 
+    }
+
+    .texto h2 {
+        font-size: 36px;
+    }
+    
+    .texto h3 {
+        font-size: 18px;
+    }
+
+    /* POST VENTA */
+    .postventa-container {
+        flex-direction: column; 
+        padding: 20px 16px;
+        gap: 40px;
+    }
+
+    .pv-titulo {
+        width: 100%; 
+        border: none; 
+        padding: 0;
+    }
+
+    .pv-servicios {
+        width: 100%; 
+    }
+
+    .pv-contacto {
+        width: 100%;
+        border: 1px solid black; 
+    }
+
+    .info-taller {
+        padding: 20px 16px;
+    }
+
+    /* SOBRE NOSOTROS (Móvil) */
+    .nosotros-container {
+        flex-direction: column; 
+        padding: 20px 16px;
+        gap: 30px;
+    }
+
+    .nosotros-imagen {
+        width: 100%;
+    }
+
+    .nosotros-texto {
+        width: 100%;
+        text-align: center;
+    }
+
+    .nosotros-texto h1 {
+        text-align: center;
+        font-size: 36px;
+    }
+
+    .valores-container {
+        padding: 20px 16px;
+    }
+
+    .valores-grid {
+        flex-direction: column; /* Apila los valores */
+        gap: 20px;
+    }
+
+    .item {
+        width: 100%;
     }
 }
