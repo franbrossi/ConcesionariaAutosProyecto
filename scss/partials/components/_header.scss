@@ -32,6 +32,27 @@
 
 .nav-link {
     color: variables.$color-secundario; 
+    font-family: variables.$fuente-titulos;
+    text-decoration: none;
+    
+    
+    padding: 8px 15px; 
+    border-radius: 5px; 
+    
+    
+    transition: all 0.3s ease; 
+
+    &:hover {
+        
+        background-color: variables.$color-secundario; 
+        color: variables.$color-primario;
+        
+        /* 2. La Animación que pediste */
+        animation-name: transicion-suave;
+        animation-duration: 0.5s; 
+        animation-iteration-count: 1; 
+        
+    }
 }
 
 .logo {
