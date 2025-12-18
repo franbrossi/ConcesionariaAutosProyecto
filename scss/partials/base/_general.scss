@@ -1,0 +1,48 @@
+@use "../utilities/variables";
+
+
+body {
+    margin: 0;
+    
+}
+
+
+img {
+    max-width: 100%;
+    display: block; 
+}
+
+
+.logo {
+    width: 150px;
+}
+
+
+h1 {
+    color:variables.$color-texto-gris;
+    font-size: 56px;
+    font-family: variables.$fuente-titulos;
+    text-align: center;
+    margin: 16px; 
+    padding: 16px;
+    margin-top: 20px;
+}
+
+p  {
+    color: variables.$color-primario;
+    font-family: variables.$fuente-textos;
+    font-size: 20px;
+}
+
+.texto-destacado {
+    font-family: variables.$fuente-textos;    
+    color: variables.$color-primario;         
+}
+.footer-p {
+    font-size: 12px;
+    font-style: italic;
+    font-family: variables.$fuente-titulos;
+    margin-left: auto;
+    margin-top: 20px;
+    color: white; 
+}

@@ -1,0 +1,199 @@
+
+
+@media (max-width: 450px) {
+    
+    body {
+        margin: 0; 
+    }
+   
+    
+    .main-content {
+        flex-direction: column; 
+        margin-top: 30px;
+        padding-left: 16px; 
+        padding-right: 16px;
+        justify-content: center;
+        align-items: center; 
+        text-align: center;
+    }
+
+    .left-content { 
+        width: 100%;
+        text-align: center;
+    }
+
+    .carousel { 
+        width: 100%;
+        text-align: center;
+    }
+    
+    .texto {
+        text-align: center; 
+    }
+    
+    .contenido-exclusivo {
+        margin-top: 50px;
+        padding-left: 16px; 
+        padding-right: 16px;
+    }
+
+    .features-container {
+        flex-direction: column; 
+        gap: 20px;
+    }
+
+    
+    footer {
+        flex-direction: column;
+        align-items: center;
+        padding-left: 16px; 
+        padding-right: 16px;
+        justify-content: center;
+        text-align: center;
+        background-color: black;
+    }
+    
+    .redes {
+        margin: 5px 0;
+        text-decoration: none;
+    }
+
+    .footer-p {
+        margin-left: 0;
+        margin-top: 15px; 
+    }
+
+    
+    .tipos-financiacion {
+        flex-direction: column; 
+        gap: 30px;
+        padding: 0 16px; 
+    }
+
+    .planes {
+        padding: 0;
+        background-color: transparent;
+        border: none;
+    }
+
+    .vehiculo-card {
+        flex-direction: column-reverse; 
+        text-align: center;
+        gap: 15px;
+    }
+
+    .info-vehiculo {
+        width: 100%;
+    }
+
+    .vehiculo-card img {
+        width: 100%;
+        height: auto;
+    }
+
+    
+    .intro h1 {
+        font-size: 40px;
+    }
+    
+    .intro p {
+        font-size: 20px;
+    }
+
+    .container {
+        gap: 60px; 
+        padding: 0 16px;
+    }
+
+    .modelos {
+        flex-direction: column;
+        gap: 30px;
+        padding: 0;
+    }
+
+    .modelo-img {
+        width: 100%; 
+        text-align: left;
+    }
+    .modelo-img img {
+        height: auto; 
+    }
+
+    .texto {
+        width: 100%; 
+        text-align: left;
+    }
+
+    .texto h2 {
+        font-size: 36px;
+    }
+    
+    .texto h3 {
+        font-size: 18px;
+    }
+
+    
+    .postventa-container {
+        flex-direction: column; 
+        padding: 20px 16px;
+        gap: 40px;
+    }
+
+    
+    .pv-titulo {
+        width: 100%; 
+        border: none; 
+        padding: 0;
+        
+    }
+
+    .pv-servicios {
+        width: 100%; 
+       
+    }
+
+    .pv-contacto {
+        width: 100%;
+        border: 1px solid black; 
+        
+    }
+
+    .info-taller {
+        padding: 20px 16px;
+    }
+
+    
+    .nosotros-container {
+        flex-direction: column; 
+        padding: 20px 16px;
+        gap: 30px;
+    }
+
+    .nosotros-imagen {
+        width: 100%;
+        
+    }
+
+    .nosotros-texto {
+        width: 100%;
+        text-align: center;
+    }
+
+    .nosotros-texto h1 {
+        text-align: center;
+        font-size: 36px;
+    }
+
+    .valores-container {
+        padding: 20px 16px;
+    }
+
+    .valores-grid {
+        flex-direction: column; 
+        gap: 20px;
+    }
+
+    .item {
+        width: 100%;
+    }
+}

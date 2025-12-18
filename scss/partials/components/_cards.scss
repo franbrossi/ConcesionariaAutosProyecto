@@ -1,0 +1,78 @@
+@use "../utilities/variables";
+@use "../utilities/mixins";
+
+
+.extra-item {
+   @include mixins.card-estilo(#f9f9f9,#ddd,10px);
+ 
+   
+}
+
+
+.planes {
+    @include mixins.card-estilo(#f9f9f9,variables.$color-primario,10px);
+    width: 100%; 
+    padding: 30px;
+   
+}
+.planes h2 {
+    font-family: variables.$fuente-titulos;
+    font-size: 32px;
+    margin-bottom: 20px;
+    text-align: left;
+}
+.content-planes li, .content-planes p {
+    font-family: variables.$fuente-textos;
+    font-size: 18px;
+    margin-bottom: 15px;
+    color: black;
+}
+
+
+.vehiculo-card {
+    @include mixins.flex(row,space-between,center);
+    @include mixins.card-estilo(variables.$color-fondo-blanco, variables.$color-borde, 15px);
+  
+}
+.vehiculo-card img {
+    width: 40%;
+    height: auto; 
+    border-radius: 8px;
+}
+
+.info-vehiculo {
+    width: 55%; 
+    padding-right: 20px;
+}
+.info-vehiculo h3 {
+    font-family: variables.$fuente-titulos;
+    font-size: 28px;
+    margin-bottom: 10px;
+}
+.info-vehiculo p {
+    font-family: variables.$fuente-textos;
+    font-size: 18px;
+    color: #333;
+}
+
+.pv-card {
+    @include mixins.card-estilo(variables.$color-fondo-claro,variables.$color-primario,10px);
+    text-align: center;
+}
+.pv-card h3 {
+    font-family: variables.$fuente-titulos;
+    margin-bottom: 10px;
+}
+
+
+.item {
+    @include mixins.card-estilo(variables.$color-fondo-blanco, variables.$color-primario, 10px);
+    width: 30%; 
+    padding: 30px;
+    
+}
+.item h3 {
+    font-family: variables.$fuente-titulos;
+    font-size: 24px;
+    margin-bottom: 15px;
+}

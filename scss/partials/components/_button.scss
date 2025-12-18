@@ -1,0 +1,13 @@
+@use "../utilities/mixins";
+@use "../utilities/variables";
+.card-button {
+    margin-top: 15px;
+    @include mixins.main-button(variables.$color-primario,variables.$color-secundario)
+     
+}
+
+.card-button:hover {
+    background-color: white; 
+    color: black; 
+    border: 2px solid black; 
+}

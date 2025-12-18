@@ -1,0 +1,84 @@
+@use "../utilities/extend";
+
+.intro {
+    text-align: center;
+    margin-top: 60px;
+    margin-bottom: 60px;
+    padding: 0 32px;
+}
+
+.intro h1 {
+    color: black;
+    font-family: "Nunito", sans-serif;
+    font-size: 56px;
+    margin-bottom: 15px;
+}
+
+.intro p {
+    @extend %grey-subtitle;
+    font-size: 24px;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    gap: 100px; 
+    padding: 0 32px;
+    margin-bottom: 100px;
+}
+
+.modelos {
+    display: flex;
+    flex-direction: row; 
+    align-items: center;
+    justify-content: space-between;
+    gap: 50px;
+    padding: 20px;
+    background-color: #fff; 
+}
+
+.modelo-img {
+    width: 55%; 
+}
+
+.modelo-img img {
+    width: 100%;
+    height: auto; 
+    border-radius: 15px;
+}
+
+.texto {
+    width: 40%;
+}
+
+.texto h2 {
+    font-family: "Nunito", sans-serif;
+    font-size: 48px;
+    color: black;
+    margin-bottom: 10px;
+}
+
+.texto h3 {
+    font-family: "Inconsolata", monospace;
+    font-size: 22px;
+    color: grey;
+    margin-bottom: 25px;
+}
+
+.texto p {
+    font-family: "Inconsolata", monospace;
+    font-size: 18px;
+    color: #333;
+    margin-bottom: 15px;
+}
+
+.texto li {
+    font-family: "Inconsolata", monospace;
+    font-size: 18px;
+    color: #333;
+    margin-bottom: 15px;
+}
+
+.texto ul {
+    padding-left: 20px; 
+}

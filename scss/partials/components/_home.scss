@@ -1,0 +1,65 @@
+@use "../utilities/extend";
+
+
+.carousel {
+    width: 600px;
+}
+
+.main-content {
+    margin-top: 80px; 
+    padding-left: 32px; 
+    padding-right: 32px;
+    display: flex;
+    flex-direction: row; 
+    gap: 80px;
+    align-items: center;
+    justify-content: space-between; 
+}
+
+.left-content {
+    width: 100%; 
+    text-align: left; 
+}
+
+.contenido-exclusivo {
+    @extend %container-center;
+    margin-top: 100px; 
+    margin-bottom: 80px; 
+    
+}
+
+.contenido-exclusivo h2 {
+    font-family: "Nunito", sans-serif;
+    color: #333;
+    font-size: 40px;
+    margin-bottom: 40px;
+}
+
+.features-container {
+    display: flex;
+    flex-direction: row; 
+    justify-content: space-around;
+    gap: 30px;
+    margin-bottom: 40px;
+}
+
+
+section div h3 {
+    font-family: "Nunito", sans-serif;
+    font-size: 24px;
+    color: #000;
+    margin-bottom: 15px;
+}
+
+.image-bottom {
+    width: 100%;
+    height: auto; 
+    margin-top: 20px;
+}
+
+.texto-aditional {
+    @extend %grey-subtitle;
+    margin: 0 auto; 
+    font-style: italic;
+    
+}

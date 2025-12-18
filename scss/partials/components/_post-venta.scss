@@ -1,0 +1,86 @@
+@use "../utilities/extend";
+
+.postventa-container {
+    display: flex;
+    flex-direction: row; 
+    justify-content: space-between;
+    gap: 30px;
+    padding: 40px 32px;
+    align-items: flex-start;
+}
+
+.pv-titulo {
+    width: 25%;
+    border: 1px solid black;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.pv-titulo h1 {
+    font-size: 40px;
+    margin-bottom: 20px;
+}
+
+.pv-servicios {
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+
+
+.pv-contacto {
+    width: 25%;
+    border: 1px solid black;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.pv-contacto h2 {
+    font-family: "Nunito", sans-serif;
+    font-size: 32px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.dato-contacto {
+    margin-bottom: 20px;
+}
+
+.dato-contacto h4 {
+    font-family: "Nunito", sans-serif;
+    font-size: 18px;
+    font-weight: 700;
+}
+
+.info-taller {
+    @extend %container-center;
+    background-color: #fff;
+}
+
+.info-taller h2 {
+    font-family: "Nunito", sans-serif;
+    font-size: 40px;
+    margin-bottom: 20px;
+    color: black;
+}
+
+.info-taller p {
+    max-width: 800px;
+    margin: 0 auto 30px auto;
+}
+
+.info-taller img {
+    width: 100%;
+    height: auto;
+    border-radius: 15px;
+    margin-bottom: 30px;
+}
+
+.texto-final {
+    @extend %grey-subtitle;
+    font-style: italic;
+    
+}

@@ -1,0 +1,29 @@
+@use "../utilities/mixins";
+@use "../utilities/variables";
+
+footer {
+    
+    margin-top: 80px;
+    padding-left: 32px; 
+    padding-right: 32px;
+    background-color: variables.$color-primario;
+    @include mixins.flex(row,space-between,center)
+    
+}
+
+.redes a {
+    padding-left: 30px;
+    gap: 20px;
+    text-decoration: none;
+    list-style-type: none;
+    color: variables.$color-secundario;
+}
+
+.footer-p {
+    font-size: 12px;
+    font-style: italic;
+    font-family: "Nunito", sans-serif;
+    margin-left: auto;
+    margin-top: 20px;
+    color: variables.$color-secundario; 
+}

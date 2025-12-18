@@ -1,0 +1,61 @@
+@use "../utilities/extend";
+
+.nosotros-container {
+    display: flex;
+    flex-direction: row; 
+    align-items: center;
+    gap: 60px;
+    padding: 60px 32px;
+    margin-bottom: 40px;
+}
+
+.nosotros-texto {
+    width: 50%;
+}
+
+.nosotros-texto h1 {
+    color: black;
+    text-align: left; 
+    font-size: 48px;
+    margin-left: 0;
+    margin-bottom: 30px;
+}
+
+.nosotros-texto p {
+    margin-bottom: 20px;
+    line-height: 1.6;
+    color: #333;
+}
+
+.nosotros-imagen {
+    width: 50%;
+}
+
+.nosotros-imagen img {
+    width: 100%;
+    height: auto; 
+    border-radius: 10px;
+    border: 1px solid #ddd;
+}
+
+.valores-container {
+    @extend %container-center;
+    margin-bottom: 80px;
+    background-color: #f9f9f9;
+}
+
+.valores-container h2 {
+    font-family: "Nunito", sans-serif;
+    text-align: center;
+    font-size: 40px;
+    margin-bottom: 40px;
+    color: black;
+}
+
+.valores-grid {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 30px;
+}
+

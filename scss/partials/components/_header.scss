@@ -1,0 +1,39 @@
+@use "../utilities/mixins";
+@use "../utilities/variables";
+
+.bg_nav_propio {
+    align-items: center;
+    margin-top: 0; 
+    background-color: variables.$color-primario; 
+}
+
+
+.navbar .container-fluid.nav_div {
+    padding-left: 0;
+    padding-right: 0;
+}
+
+.nav_div {
+    @include mixins.flex (row,space-between,center)
+}
+
+.navbar-collapse {
+    justify-content: flex-end; 
+}
+
+.nav_ul {
+    display: flex;
+    justify-content: flex-end; 
+}
+
+.nav-item {
+    gap: 16px;
+}
+
+.nav-link {
+    color: variables.$color-secundario; 
+}
+
+.logo {
+    width: 150px;
+}

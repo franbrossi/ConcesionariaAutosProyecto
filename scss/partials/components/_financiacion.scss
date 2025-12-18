@@ -1,0 +1,87 @@
+.tipos-financiacion {
+    display: flex;
+    flex-direction: column; 
+    gap: 40px;
+    padding: 0 32px; 
+    margin-top: 80px;
+    margin-bottom: 80px;
+    align-items: center; 
+}
+
+.planes {
+    width: 100%; 
+    padding: 30px;
+    border: 1px solid #000; 
+    border-radius: 10px;
+    background-color: #f9f9f9; 
+}
+
+.planes h2 {
+    font-family: "Nunito", sans-serif;
+    font-size: 32px;
+    margin-bottom: 20px;
+    text-align: left;
+}
+
+.content-planes li {
+    font-family: "Inconsolata", monospace;
+    font-size: 18px;
+    margin-bottom: 15px;
+    color: black;
+        
+}
+
+
+
+
+.content-planes p {
+    font-family: "Inconsolata", monospace;
+    font-size: 18px;
+    margin-bottom: 15px;
+    color: black;
+}
+
+.texto-destacado {
+    font-family: "Inconsolata", monospace;
+    font-size: 18px;
+    font-weight: 700; 
+    margin-bottom: 10px;
+    color: black;
+        ul {
+            text-align: left;       
+            display: inline-block;  
+            padding-left: 20px;     
+            margin: 0 auto;
+    }
+}
+
+.lista-vehiculos {
+    width: 100%; 
+    display: flex;
+    flex-direction: column; 
+    gap: 30px;
+}
+
+
+
+.info-vehiculo {
+    width: 55%; 
+    padding-right: 20px;
+}
+
+.info-vehiculo h3 {
+    font-family: "Nunito", sans-serif;
+    font-size: 28px;
+    margin-bottom: 10px;
+}
+
+.info-vehiculo p {
+    font-family: "Inconsolata", monospace;
+    font-size: 18px;
+    color: #333;
+}
+
+
+ 
+
+

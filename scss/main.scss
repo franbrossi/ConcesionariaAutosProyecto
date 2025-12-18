@@ -1,0 +1,24 @@
+//BASE
+@use "./partials/base/reset";
+@use "./partials/base/tipografia";
+@use "./partials/base/general";
+
+//COMPONENTS
+@use "./partials/components/header";
+@use "./partials/components/footer";
+@use "./partials/components/button";
+@use "./partials/components/cards";
+@use "./partials/components/home";
+@use "./partials/components/financiacion";
+@use "./partials/components/modelos";
+@use "./partials/components/post-venta";
+@use "./partials/components/sobre-nosotros";
+
+//MEDIAQUERIES
+
+@use "./partials/components/mediaQueries";
+
+//UTILITIES
+@use "./partials/utilities/mixins";
+@use "./partials/utilities/variables";
+
