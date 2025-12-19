@@ -1,4 +1,5 @@
 @use "../utilities/extend";
+@use "../utilities/variables";
 
 .intro {
     text-align: center;
@@ -8,7 +9,7 @@
 }
 
 .intro h1 {
-    color: black;
+    color: variables.$color-primario;
     font-family: "Nunito", sans-serif;
     font-size: 56px;
     margin-bottom: 15px;
@@ -34,7 +35,7 @@
     justify-content: space-between;
     gap: 50px;
     padding: 20px;
-    background-color: #fff; 
+    background-color: variables.$color-fondo-blanco; 
 }
 
 .modelo-img {
@@ -54,28 +55,28 @@
 .texto h2 {
     font-family: "Nunito", sans-serif;
     font-size: 48px;
-    color: black;
+    color: variables.$color-primario;
     margin-bottom: 10px;
 }
 
 .texto h3 {
     font-family: "Inconsolata", monospace;
     font-size: 22px;
-    color: grey;
+    color: variables.$color-texto-gris;
     margin-bottom: 25px;
 }
 
 .texto p {
     font-family: "Inconsolata", monospace;
     font-size: 18px;
-    color: #333;
+    color: variables.$color-texto-oscuro;
     margin-bottom: 15px;
 }
 
 .texto li {
     font-family: "Inconsolata", monospace;
     font-size: 18px;
-    color: #333;
+    color: variables.$color-texto-oscuro;
     margin-bottom: 15px;
 }
 

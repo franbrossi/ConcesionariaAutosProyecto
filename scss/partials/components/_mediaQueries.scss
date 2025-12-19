@@ -1,4 +1,4 @@
-
+@use "../utilities/variables";
 
 @media (max-width: 450px) {
     
@@ -50,7 +50,7 @@
         padding-right: 16px;
         justify-content: center;
         text-align: center;
-        background-color: black;
+        background-color: variables.$color-primario;
     }
     
     .redes {
@@ -154,7 +154,7 @@
 
     .pv-contacto {
         width: 100%;
-        border: 1px solid black; 
+        border: 1px solid variables.$color-primario; 
         
     }
 

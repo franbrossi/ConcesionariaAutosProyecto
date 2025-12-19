@@ -3,13 +3,18 @@
 <head> 
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="autos,modelos,concesionarias,electricos,sedanes,suvs,compactos,hatchbacks,financiacion,0kms">
+    <meta name="description" content="Financiá tu próximo auto en Car's Fran. Planes a medida con Tasa 0%, hasta 60 cuotas fijas y aprobación en 24hs. Asesoramiento experto para que te lleves tu 0km hoy.">
 
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
 
     <link rel="stylesheet" href="../styles/style.css">
 
     <!-- ANIMACIONES -->
-     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+
+    <!-- AOS -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
      
     <title>Financiación - Car's Fran</title>
 </head>
@@ -71,7 +76,7 @@
 
             <div class="lista-vehiculos">
                 
-                <div class="vehiculo-card">
+                <div data-aos="flip-left" data-aos-easing="ease-out-cubic" data-aos-duration="2000" class="vehiculo-card">
                     <div class="info-vehiculo">
                         <h3>SUV's</h3>
                         <p>Ideales para la familia y la aventura. Financia hasta el 70% del valor con entrega inmediata. Cuotas bonificadas los primeros 3 meses.</p>
@@ -81,7 +86,7 @@
                     
                 </div>
 
-                <div class="vehiculo-card">
+                <div data-aos="flip-left" data-aos-easing="ease-out-cubic" data-aos-duration="2000" class="vehiculo-card">
                     <div class="info-vehiculo">
                         <h3>Sedán</h3>
                         <p>Elegancia y confort para la ciudad. Planes 100% financiados sin interés. Consulta por el plan de canje de tu usado como parte de pago.</p>
@@ -91,7 +96,7 @@
                     
                 </div>
 
-                <div class="vehiculo-card">
+                <div data-aos="flip-left" data-aos-easing="ease-out-cubic" data-aos-duration="2000" class="vehiculo-card">
                     <div class="info-vehiculo">
                         <h3>Eléctricos</h3>
                         <p>El futuro es hoy. Tasa preferencial eco-friendly del 5% anual. Incluye instalación de cargador domiciliario bonificada.</p>
@@ -121,5 +126,13 @@
     </footer>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+
+    <!-- AOS -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+    <script>
+        AOS.init();
+    </script>
+
 </body>
 </html>

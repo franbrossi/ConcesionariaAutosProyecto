@@ -1,4 +1,3 @@
-@charset "UTF-8";
 @import url("https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Inconsolata:wght@200..900&display=swap");
 * {
@@ -100,7 +99,6 @@ p {
 .nav-link:hover {
   background-color: white;
   color: black;
-  /* 2. La Animación que pediste */
   animation-name: transicion-suave;
   animation-duration: 0.5s;
   animation-iteration-count: 1;
@@ -191,7 +189,13 @@ footer {
   text-align: left;
 }
 
-.content-planes li, .content-planes p {
+.content-planes li {
+  font-family: "Inconsolata", monospace;
+  font-size: 18px;
+  margin-bottom: 15px;
+  color: black;
+}
+.content-planes li .content-planes p {
   font-family: "Inconsolata", monospace;
   font-size: 18px;
   margin-bottom: 15px;
@@ -256,7 +260,7 @@ footer {
   padding: 20px;
   box-sizing: border-box;
   text-align: center;
-  width: 30%;
+  text-align: left;
   padding: 30px;
 }
 
@@ -367,10 +371,13 @@ section div h3 {
   font-family: "Nunito", sans-serif;
   font-size: 32px;
   margin-bottom: 20px;
-  text-align: left;
+  text-align: center;
 }
 
 .content-planes li {
+  display: flex;
+  flex-direction: column;
+  text-align: left;
   font-family: "Inconsolata", monospace;
   font-size: 18px;
   margin-bottom: 15px;
@@ -636,10 +643,14 @@ section div h3 {
 }
 
 .valores-grid {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
   gap: 30px;
+}
+@media (max-width: 768px) {
+  .valores-grid {
+    grid-template-columns: 1fr;
+  }
 }
 
 @media (max-width: 450px) {

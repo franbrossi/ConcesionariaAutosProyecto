@@ -1,3 +1,5 @@
+@use "../utilities/variables";
+
 .tipos-financiacion {
     display: flex;
     flex-direction: column; 
@@ -13,21 +15,24 @@
     padding: 30px;
     border: 1px solid #000; 
     border-radius: 10px;
-    background-color: #f9f9f9; 
+    background-color: variables.$color-fondo-claro; 
 }
 
 .planes h2 {
     font-family: "Nunito", sans-serif;
     font-size: 32px;
     margin-bottom: 20px;
-    text-align: left;
+    text-align: center;
 }
 
 .content-planes li {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
     font-family: "Inconsolata", monospace;
     font-size: 18px;
     margin-bottom: 15px;
-    color: black;
+    color: variables.$color-primario;
         
 }
 
@@ -38,7 +43,7 @@
     font-family: "Inconsolata", monospace;
     font-size: 18px;
     margin-bottom: 15px;
-    color: black;
+    color: variables.$color-primario;
 }
 
 .texto-destacado {
@@ -46,7 +51,7 @@
     font-size: 18px;
     font-weight: 700; 
     margin-bottom: 10px;
-    color: black;
+    color: variables.$color-primario;
         ul {
             text-align: left;       
             display: inline-block;  
@@ -78,7 +83,7 @@
 .info-vehiculo p {
     font-family: "Inconsolata", monospace;
     font-size: 18px;
-    color: #333;
+    color: variables.$color-texto-oscuro;
 }
 
 

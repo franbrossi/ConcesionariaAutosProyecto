@@ -3,14 +3,19 @@
 <head> 
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="autos,modelos,concesionarias,electricos,sedanes,suvs,compactos,hatchbacks,financiacion,0kms">
+    <meta name="description" content="Bienvenido a Car's Fran. Descubrí la máxima excelencia automotriz con nuestra gama de 0km, deportivos y SUVs. Diseño aerodinámico, tecnología y pasión por los motores.">
 
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
 
 
     <link rel="stylesheet" href="./styles/style.css">
 
-    <!-- ANIMACIONES -->
+    <!-- ANIMACIONES ANIMATE-->
      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+
+    <!-- AOS -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 
     <title>Car's fran automoviles</title>
 </head>
@@ -92,7 +97,7 @@
         
         <section class="contenido-exclusivo">
             <h2>🚗 Nuestras Exclusividades</h2>
-            <div class="features-container">
+            <div  data-aos="flip-right" class="features-container">
                 <div class="extra-item">
                     <h3>Diseño Aerodinámico</h3>
                     <p>Cada vehículo en nuestro catálogo ha pasado por rigurosas pruebas en túnel de viento para asegurar una eficiencia y estabilidad óptimas a altas velocidades.
@@ -134,7 +139,13 @@
     </footer>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
-        
+    
+    <!-- AOS -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+    <script>
+        AOS.init();
+    </script>
 
 </body>
 </html>

@@ -1,3 +1,4 @@
+@use "../utilities/variables";
 
 %container-center {
     text-align: center;
@@ -11,7 +12,7 @@
 
 %grey-subtitle {
     font-family: "Inconsolata", monospace; 
-    color: grey;                           
+    color: variables.$color-texto-gris;                           
     font-size: 20px;
     margin-bottom: 20px;
 }

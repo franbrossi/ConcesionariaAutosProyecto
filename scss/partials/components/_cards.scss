@@ -3,14 +3,14 @@
 
 
 .extra-item {
-   @include mixins.card-estilo(#f9f9f9,#ddd,10px);
+   @include mixins.card-estilo(variables.$color-fondo-claro,variables.$color-borde,10px);
  
    
 }
 
 
 .planes {
-    @include mixins.card-estilo(#f9f9f9,variables.$color-primario,10px);
+    @include mixins.card-estilo(variables.$color-fondo-claro,variables.$color-primario,10px);
     width: 100%; 
     padding: 30px;
    
@@ -21,13 +21,18 @@
     margin-bottom: 20px;
     text-align: left;
 }
-.content-planes li, .content-planes p {
+.content-planes li {
     font-family: variables.$fuente-textos;
     font-size: 18px;
     margin-bottom: 15px;
-    color: black;
+    color: variables.$color-primario;
+        .content-planes p {
+            font-family: variables.$fuente-textos;
+            font-size: 18px;
+            margin-bottom: 15px;
+            color: variables.$color-primario;
+        }
 }
-
 
 .vehiculo-card {
     @include mixins.flex(row,space-between,center);
@@ -52,7 +57,7 @@
 .info-vehiculo p {
     font-family: variables.$fuente-textos;
     font-size: 18px;
-    color: #333;
+    color: variables.$color-texto-oscuro;
 }
 
 .pv-card {
@@ -67,7 +72,7 @@
 
 .item {
     @include mixins.card-estilo(variables.$color-fondo-blanco, variables.$color-primario, 10px);
-    width: 30%; 
+    text-align: left;
     padding: 30px;
     
 }

@@ -1,4 +1,5 @@
 @use "../utilities/extend";
+@use "../utilities/variables";
 
 .postventa-container {
     display: flex;
@@ -11,7 +12,7 @@
 
 .pv-titulo {
     width: 25%;
-    border: 1px solid black;
+    border: 1px solid variables.$color-primario;
     padding: 20px;
     border-radius: 10px;
     text-align: center;
@@ -33,7 +34,7 @@
 
 .pv-contacto {
     width: 25%;
-    border: 1px solid black;
+    border: 1px solid variables.$color-primario;
     padding: 20px;
     border-radius: 10px;
 }
@@ -57,14 +58,14 @@
 
 .info-taller {
     @extend %container-center;
-    background-color: #fff;
+    background-color: variables.$color-fondo-blanco;
 }
 
 .info-taller h2 {
     font-family: "Nunito", sans-serif;
     font-size: 40px;
     margin-bottom: 20px;
-    color: black;
+    color: variables.$color-primario;
 }
 
 .info-taller p {
