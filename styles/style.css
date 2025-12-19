@@ -118,12 +118,19 @@ footer {
   justify-content: space-between;
   align-items: center;
 }
-
-.redes a {
+footer .redes a {
   padding-left: 30px;
   gap: 20px;
   text-decoration: none;
   list-style-type: none;
+  color: white;
+}
+footer .redes a .footer-p {
+  font-size: 12px;
+  font-style: italic;
+  font-family: "Nunito", sans-serif;
+  margin-left: auto;
+  margin-top: 20px;
   color: white;
 }
 
@@ -156,6 +163,11 @@ footer {
   border: 2px solid black;
 }
 
+.card-button:hover {
+  background-color: white;
+  color: black;
+  border: 2px solid black;
+}
 
 .extra-item {
   background-color: #f9f9f9;
@@ -164,6 +176,14 @@ footer {
   padding: 20px;
   box-sizing: border-box;
   text-align: center;
+}
+
+.extra-item img {
+  width: 100%;
+  height: 500px;
+  border-radius: 10px;
+  margin-top: 15px;
+  margin-bottom: 15px;
 }
 
 .planes {
@@ -190,7 +210,7 @@ footer {
   margin-bottom: 15px;
   color: black;
 }
-.content-planes p {
+.content-planes li .content-planes p {
   font-family: "Inconsolata", monospace;
   font-size: 18px;
   margin-bottom: 15px;
@@ -284,6 +304,7 @@ footer {
   margin-bottom: 20px;
   line-height: 1.6;
   color: #333;
+  text-align: center;
 }
 
 .carousel {
@@ -309,6 +330,8 @@ footer {
 .contenido-exclusivo {
   margin-top: 100px;
   margin-bottom: 80px;
+  background-color: #f9f9f9;
+  padding: 60px 0;
 }
 
 .contenido-exclusivo h2 {
@@ -369,7 +392,22 @@ section div h3 {
   text-align: center;
 }
 
+.content-planes li {
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+  font-family: "Inconsolata", monospace;
+  font-size: 18px;
+  margin-bottom: 15px;
+  color: black;
+}
 
+.content-planes p {
+  font-family: "Inconsolata", monospace;
+  font-size: 18px;
+  margin-bottom: 15px;
+  color: black;
+}
 
 .texto-destacado {
   font-family: "Inconsolata", monospace;

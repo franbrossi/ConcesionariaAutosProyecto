@@ -6,6 +6,7 @@
     margin-bottom: 20px;
     line-height: 1.6;
     color: variables.$color-texto-oscuro;
+    text-align: center;
 }
 
 .carousel {
@@ -31,7 +32,9 @@
 .contenido-exclusivo {
     @extend %container-center;
     margin-top: 100px; 
-    margin-bottom: 80px; 
+    margin-bottom: 80px;
+    background-color: variables.$color-fondo-claro; 
+    padding: 60px 0; 
     
 }
 
