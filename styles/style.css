@@ -156,11 +156,6 @@ footer {
   border: 2px solid black;
 }
 
-.card-button:hover {
-  background-color: white;
-  color: black;
-  border: 2px solid black;
-}
 
 .extra-item {
   background-color: #f9f9f9;
@@ -195,7 +190,7 @@ footer {
   margin-bottom: 15px;
   color: black;
 }
-.content-planes li .content-planes p {
+.content-planes p {
   font-family: "Inconsolata", monospace;
   font-size: 18px;
   margin-bottom: 15px;
@@ -374,22 +369,7 @@ section div h3 {
   text-align: center;
 }
 
-.content-planes li {
-  display: flex;
-  flex-direction: column;
-  text-align: left;
-  font-family: "Inconsolata", monospace;
-  font-size: 18px;
-  margin-bottom: 15px;
-  color: black;
-}
 
-.content-planes p {
-  font-family: "Inconsolata", monospace;
-  font-size: 18px;
-  margin-bottom: 15px;
-  color: black;
-}
 
 .texto-destacado {
   font-family: "Inconsolata", monospace;
